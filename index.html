@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Add EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Portfolio</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="circle circle-1"></div>
+  <div class="circle circle-2"></div>
+  <div class="circle circle-3"></div>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-subtitle">Welcome to my portfolio</span>
+        <h1>Hi, I'm Harley Scheck</h1>
+        <p class="hero-description">A passionate web developer creating beautiful and functional digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://profile.indeed.com"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/HarleyS0228"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/harley.scheck/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="Headshot.jpeg" alt="About Me">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I'm a creative web developer passionate about building exceptional digital experiences that live on the internet. I focus on creating elegant, efficient, and user-friendly websites that achieve business goals while delighting users.</p>
+          <p>With expertise in modern web technologies and a keen eye for design, I bring ideas to life with clean code and innovative solutions. My approach combines technical knowledge with creative problem-solving to deliver outstanding results.</p>
+          <p>When I'm not coding, I enjoy traveling, reading, and going to the gym. I'm always seeking new challenges and opportunities to learn and grow as a developer.</p>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Here are some of the skills and technologies I've been working with recently.</p>
+      </div>
+      <div class="skills-container">
+        <div class="skill-card fade-in">
+          <h3>Front-End Development</h3>
+          <ul>
+            <li>HTML5 & CSS3/SCSS</li>
+            <li>JavaScript & Typescript</li>
+            <li>React Native & Next.js</li>
+            <li>SwiftUI & Kotlin</li>
+            <li>TailwindCSS</li>
+          </ul>
+        </div>
+        <div class="skill-card fade-in">
+          <h3>Back-End & Cloud Development</h3>
+          <ul>
+            <li>Node.js & Express</li>
+            <li>Angular</li>
+            <li>MetaMask</li>
+            <li>SQL & phpMyAdmin Databases</li>
+            <li>Firebase</li>
+          </ul>
+        </div>
+        <div class="skill-card fade-in">
+          <h3>Tools & Methods</h3>
+          <ul>
+            <li>GitKraken & GitHub</li>
+            <li>Unity & Blender</li>
+            <li>AzureDevops</li>
+            <li>UI/UX Principles</li>
+            <li>Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Here's a selection of my recent work.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="SonhoLogo.png" alt="Project 1">
+            <span class="project-category">IOS App</span>
+          </div>
+          <div class="project-content">
+            <h3>Sonho</h3>
+            <p>Pronounced "Sohn-yoh", the Brazilian Portuguese word for "dream". Sonho is an IOS app built in XCode, designed to track your sleep patterns and help you improve your sleep quality.</p>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/HarleyS0228/Sonho" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="TopsideTipoff36.png" alt="Project 2">
+            <span class="project-category">Website</span>
+          </div>
+          <div class="project-content">
+            <h3>Topside Tipoff</h3>
+            <p>Topside Tipoff was built in Angular to track live results of the local basketball game tournament in Goodland, KS. It features a responsive design and a user-friendly interface. </p>
+            <div class="project-links">
+              <a href="https://topsidetipoff.com/" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/Northwest-Tech/CLIENT-Topside-Web" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card fade-in">
+          <div class="project-image">
+            <img src="Soapbox.jpg" alt="Project 3">
+            <span class="project-category">Mobile App</span>
+          </div>
+          <div class="project-content">
+            <h3>Soapbox</h3>
+            <p>Soapbox is a social media app built in React Native and Couchbase. It was a team project in my internship at Goodland Tech where I was able to better understand the development process and React Native.</p>
+            <div class="project-links">
+              <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/K38Shaw/SoapBox" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hello? Feel free to reach out.</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>hscheck548@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>Hays, KS</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+1 (785)953-7303</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+            <div id="form-status" style="margin-top: 15px; display: none; padding: 10px; border-radius: 4px;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <a href="#" class="footer-logo">Portfolio</a>
+      <div class="footer-social">
+        <a href="https://profile.indeed.com"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/HarleyS0228"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/harley.scheck/"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2025 Harley Scheck. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script>
+    // Initialize EmailJS
+    (function() {
+      // Replace with your actual EmailJS user ID
+      emailjs.init("YOUR_USER_ID");
+    })();
+
+    // Contact form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      // Change button text and disable it while sending
+      const submitBtn = document.getElementById('submit-btn');
+      const formStatus = document.getElementById('form-status');
+      const originalBtnText = submitBtn.textContent;
+      
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+      formStatus.style.display = 'none';
+
+      // Prepare template parameters
+      const templateParams = {
+        name: this.name.value,
+        email: this.email.value,
+        subject: this.subject.value,
+        message: this.message.value
+      };
+
+      // Send email using EmailJS
+      // Replace with your actual service ID and template ID
+      emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+        .then(function() {
+          // Success message
+          formStatus.textContent = 'Your message has been sent successfully!';
+          formStatus.style.backgroundColor = '#d4edda';
+          formStatus.style.color = '#155724';
+          formStatus.style.display = 'block';
+          
+          // Reset the form
+          document.getElementById('contact-form').reset();
+        }, function(error) {
+          // Error handling
+          console.error('EmailJS error:', error);
+          formStatus.textContent = 'Sorry, there was an error sending your message. Please try again later.';
+          formStatus.style.backgroundColor = '#f8d7da';
+          formStatus.style.color = '#721c24';
+          formStatus.style.display = 'block';
+        })
+        .finally(function() {
+          // Re-enable the button
+          submitBtn.textContent = originalBtnText;
+          submitBtn.disabled = false;
+        });
+    });
+
+    // Original JavaScript code
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+    
+    const fadeElements = document.querySelectorAll('.fade-in');
+    
+    const scrollObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+    
+    fadeElements.forEach(element => {
+      scrollObserver.observe(element);
+    });
+    
+    const header = document.querySelector('#header');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+    
+    const backToTopButton = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopButton.classList.add('active');
+      } else {
+        backToTopButton.classList.remove('active');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+</html>
